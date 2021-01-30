@@ -1,3 +1,7 @@
+/*
+This is css style comment for singleline and/or multiline.
+*/
+
 p{
   color:blue;
   text-align:center;
@@ -26,8 +30,17 @@ th, td{
   padding: 4px;
   border:1px solid black;
 }
-
+/*
+# is used to style html elements with unique id's. no two elements can have same id.
+But multiple elements (of different types even) can have same class.
+*/
 #middle {
   text-align: center;
-  vertical-align: middle;
+
+}
+/*
+. (dot) is used to style classes. Multiple html elements can be styled by a same single class.
+*/
+.myClass {
+  border: 2px solid red;
 }
