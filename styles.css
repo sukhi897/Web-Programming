@@ -1,0 +1,33 @@
+p{
+  color:blue;
+  text-align:center;
+  border: 3px dotted red;
+}
+
+#top , #middle{
+  font-family: Arial, sans-serif;
+  font-style:italic;
+  background-color: orange;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+}
+
+table{
+  border:2px solid black;
+  width: inherit;
+  border-collapse: collapse;
+}
+th{
+  background-color: lightgrey;
+}
+th, td{
+  padding: 4px;
+  border:1px solid black;
+}
+
+#middle {
+  text-align: center;
+  vertical-align: middle;
+}
