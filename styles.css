@@ -1,6 +1,10 @@
 /*
 This is css style comment for singleline and/or multiline.
 */
+h2{
+  color:red;
+  text-align:center;
+}
 
 p{
   color:blue;
@@ -16,6 +20,17 @@ p{
   height: 400px;
   margin: 10px;
   padding: 10px;
+}
+
+/*NOTICE BELOW: ol(ordered list) and li(list element) tag doesnt have comma between them.
+It is because i want to style any list items that are descendants of ordered list. */
+ol li {
+  color: red;
+}
+/*NOTICE BELOW: ul(unordered list) and li(list element) tag have '>' between them.
+It is because i want to style only the list items that are immediate descendants of unordered list. Not the grandchildren.*/
+ul > li {
+  color:blue;
 }
 
 table{
@@ -43,4 +58,30 @@ But multiple elements (of different types even) can have same class.
 */
 .myClass {
   border: 2px solid red;
+}
+
+/*Below two input fields are styled by differentiating them based on their attributes. In this case, that attribute is type. */
+input[type=text]{
+  background-color: yellow;
+}
+
+input[type=password]{
+  background-color: green;
+}
+/*Styling a button and adding hover effect. ':' before hover is called Pseudoclass Selector. */
+button{
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  background-color: green;
+}
+button:hover{
+  background-color: orange;
+}
+
+/*Following code makes the screen-only class elements to not print in print view.*/
+@@media print {
+  .screen-only {
+    display: none;
+  }
 }
