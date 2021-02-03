@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SecondPage!</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
+    This is html comment This line or paragraph
+    will not be interpreted by
+    the web browser.
+    -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1 style="color:#0cae05;text-align:center">General Information Form</h1>
+    <form>
+      <div>
+        <input name="name" type="text" placeholder="Name">
+        <input type="password" name="password" placeholder="Password">
+      </div>
+      <div>
+        Favourite Color?
+        <input type="radio" name="color" value="red"> Red
+        <input type="radio" name="color" value="blue"> Blue
+        <input type="radio" name="color" value="green"> Green
+        <input type="radio" name="color" value="other"> Other
+      </div>
+      <div>
+        <input name="country" list="countries" placeholder="Country">
+        <datalist>
+          <option value="United States">US</option>
+          <option value="United Kingdom">UK</option>
+          <option value="Canada">Canada</option>
+        </datalist>
+      </div>
+      <div>
+        <p class="screen-only">This is a ghost Paragraph. It will not appear on page when trying to print this page. </p>
+
+      </div>
+    </form>
+  </body>
+</html>
